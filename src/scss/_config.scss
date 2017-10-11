@@ -1,0 +1,30 @@
+$cssCore: false;
+$cssHelpers: true;
+
+// Colors
+$color1: #2c3e50;
+$color2: #709ECC;
+$color3: #6C767F;
+$color4: #8CC6FF;
+
+$gray: #e1e1e1;
+$black: #444;
+$white: #f4f4f4;
+$red: #e22d2d;
+
+$twitter:#1DA1F2;
+$github: #8b2c9e;
+$linkedin: #0077B5;
+
+$font-text : 'Nunito', sans-serif;
+$font-title : 'Inconsolata', monospace;
+
+$max-width : 1024px !default;
+
+@mixin iconFont() {
+  font-family: "chavitaicon" !important;    
+  font-style: normal !important;    
+  font-weight: normal !important;    
+  font-variant: normal !important;    
+  text-transform: none !important;
+}
