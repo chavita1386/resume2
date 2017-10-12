@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <app-header :name="name" :last="last" :job="job" :ready="ready"></app-header>
-    <app-main v-if="ready" :ready="ready"></app-main>
+    <!-- <app-main v-if="ready" :ready="ready"></app-main> -->
+    <router-view></router-view>
+    <app-menu></app-menu>    
   </div>
 </template>
 
@@ -10,10 +12,11 @@ import axios from 'axios'
 
 import appHeader from './components/appHeader/appHeader.vue'
 import appMain from './components/appMain/appMain.vue'
+import appMenu from './components/appMenu/appMenu.vue'
 
 export default {
   name: 'app',
-  components: { appHeader, appMain },
+  components: { appHeader, appMain, appMenu },
   data() {
     return {
       ready: false,
@@ -64,5 +67,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.main {
+  margin: 0 0 80px 0;
+  padding: 0;
 
+  @include from(l) {
+    margin-left: 100px;
+  }
+}
+
+.content__wrapper {	
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	margin: 1.5rem 1rem 0 1rem;	
+}
+
+.content__title {
+	@include edItem(100);
+	text-align: center;
+	padding: .7rem;
+	color: $black;
+	position: relative;
+	border: 1px solid $gray;
+  background-color: $light-gray;
+  font-size: 1.8rem;
+}
+
+.content__text {
+	@include edItem(100);
+	color: $black;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	padding: 1.5rem 1.8rem;
+	background-color: $gray;
+	border-top: 1px solid darken($gray, 8%);
+}
 </style>

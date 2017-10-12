@@ -39,10 +39,7 @@ export default {
 
 <style lang="scss">
 @import '../../scss/_base.scss';
-.main {
-  margin: 0;
-  padding: 0;  
-}
+
 
 .fade-enter-active,
 .fade-leave-active {
@@ -53,6 +50,8 @@ export default {
 .fade-leave-to {
   opacity: 0
 }
+
+
 </style>
 
 

@@ -1,6 +1,6 @@
 <template>
   <div class="social">
-    <a class="social-link" :href="item.url" v-for="item in list" :key="item.idSocialNetwork">
+    <a class="social-link" :href="item.url" target="_blank" v-for="item in list" :key="item.idSocialNetwork">
       <span class="social-link__icon" :class="css(item.name)"></span>
       <span class="social-link__text" :class="ready ? 'active': ''">{{item.name}}</span>
     </a>

@@ -38,10 +38,10 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
-  min-height: 250px;
+  min-height: 225px;
   
-  @include from(l) {
-    min-height: 300px;
+  @include from(l) {    
+    margin-left: 100px;
   }
 }
 
