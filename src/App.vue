@@ -54,6 +54,8 @@ export default {
 body {
   text-rendering: optimizeLegibility;
   --webkit-font-smoothing: antialiased;
+
+  
 }
 
 #app {

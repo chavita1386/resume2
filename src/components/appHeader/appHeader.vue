@@ -39,7 +39,7 @@ export default {
   flex-wrap: wrap;
   overflow: hidden;
   min-height: 250px;
-
+  
   @include from(l) {
     min-height: 300px;
   }
@@ -75,9 +75,14 @@ export default {
   position: relative;
   left: -100%;
   transition: left .8s;
+  font-size: 2.5rem;
 
   &.active {
     left:0;
+  }
+
+  @include from(l) {
+    font-size: 3.2rem;
   }
 }
 
@@ -90,10 +95,14 @@ export default {
   right: 0;
   transform: scale(0);
   //transition: right .7s .3s;
-
+  font-size: 1.8rem;
 
   &.active {
     animation: bounce-in 1s forwards .8s;
+  }
+
+  @include from(l) {
+    font-size: 2.2rem;
   }
 }
 
@@ -106,9 +115,15 @@ export default {
   transition: bottom .7s;
   font-family: $font-text;
   color: darken($white, 30%);
+  font-size: 1rem;
 
   &.active {
     bottom:0;
   }
+
+  @include from(l) {
+    font-size: 1.2rem;
+  }
+
 }
 </style>

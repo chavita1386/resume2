@@ -10,21 +10,21 @@
 import axios from 'axios'
 import appProfile from "./appProfile.vue"
 
-export default {  
+export default {
   components: {
     appProfile
   },
-  props: [ 'ready' ],
+  props: ['ready'],
   data() {
     return {
-      profile: null      
+      profile: null
     }
   },
   mounted() {
     axios.get('http://chetur.com/api/content/2')
-      .then((response) => {        
+      .then((response) => {
         const data = response.data.content;
-        this.profile = data[0];  
+        this.profile = data[0];
         //this.ready = true      
       })
       .catch((error) => {
@@ -32,12 +32,18 @@ export default {
       })
   },
   computed: {
-    
+
   }
 }
 </script>
 
 <style lang="scss">
+@import '../../scss/_base.scss';
+.main {
+  margin: 0;
+  padding: 0;  
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 1s

@@ -55,7 +55,7 @@ export default {
     position: absolute;
     top: 0;
     right: 40px;
-    width: 25%;
+    width: auto;
     height: 35px;
     text-align: center;
     font-family: $font-text;
@@ -65,10 +65,10 @@ export default {
 }
 
 .social-link {
-  padding: 5px;
+  padding: 3px;
   margin-left: 2px;
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   width: 90px;
   display: inline-block;
   text-align: center;
