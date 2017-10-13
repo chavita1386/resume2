@@ -72,7 +72,7 @@ export default {
   height: 40px;
   width: 90px;
   margin: 1rem auto;
-  box-shadow: inset 0px 0px 0px 5px rgba($white, 1);
+  box-shadow: inset 0px 0px 0px 5px rgba(white, 1);
   display: flex;
   text-align: center;
   color: white;
