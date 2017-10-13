@@ -20,7 +20,7 @@ export default {
       experienceList: null
     }
   },
-  mpunted() {
+  mounted() {
     axios.get('http://chetur.com/api/content/2')
       .then((response) => {
         const data = response.data.content;
