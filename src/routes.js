@@ -1,6 +1,7 @@
 import appMain from './components/appMain/appMain.vue'
 import appEducation from './components/appEducation/appEducation.vue'
 import appSkills from './components/appSkills/appSkills.vue'
+import appExperience from './components/appExperience/appExperience.vue'
 
 export const routes = [
   {
@@ -14,5 +15,9 @@ export const routes = [
   {
     path: '/skills',
     component: appSkills
+  },
+  {
+    path: '/experience',
+    component: appExperience
   }
 ]
