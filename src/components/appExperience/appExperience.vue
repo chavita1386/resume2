@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <transition name="fade">
-      <div class="experience">
+      <div class="experience" v-if="experienceList">
         <div class="content__wrapper">
           <h2 class="content__title">Experience</h2>
           <div v-html="experienceList.contentText"></div>
@@ -17,10 +17,10 @@ import axios from 'axios'
 export default {
   data() {
     return {
-      experienceList: ''
+      experienceList: null
     }
   },
-  created() {
+  mpunted() {
     axios.get('http://chetur.com/api/content/2')
       .then((response) => {
         const data = response.data.content;

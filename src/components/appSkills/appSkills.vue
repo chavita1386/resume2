@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <transition name="fade">
-      <div class="skill">
+      <div class="skill" v-if="skills">
         <div class="content__wrapper" v-if="skills">
           <h2 class="content__title">Skills</h2>
           <div class="battery-container">
